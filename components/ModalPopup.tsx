@@ -63,42 +63,42 @@ const AgentSkillModal: React.FC<AgentSkillModalProps> = ({ onClose, }) => {
                     >
                         <div className="text-gray-700 leading-relaxed text-[14px]">
                             When{" "}
-                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2">
+                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2 my-2">
                                 <div className="w-[15px] h-[15px]">
                                     <PersonIcon className="w-full h-full text-sky-800" />
                                 </div>
                                 any vendor
                             </span>{" "}
                             sends an email with changes to{" "}
-                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2">
+                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2 my-2">
                                 <div className="w-[15px] h-[15px]">
                                     <DocumentIcon className="w-full h-full text-sky-800" />
                                 </div>
                                 Confirmed purchase orders
                             </span>{" "}
                             , check if the resulting{" "}
-                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2">
+                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2 my-2">
                                 <div className="w-[15px] h-[15px]">
                                     <BarIcon className="w-full h-full text-sky-800" />
                                 </div>
                                 on-hand inventory
                             </span>{" "}
                             will allow{" "}
-                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2">
+                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2 my-2">
                                 <div className="w-[15px] h-[15px]">
                                     <CopyIcon className="w-full h-full text-sky-800" />
                                 </div>
                                 all sales orders
                             </span>{" "}
                             to{" "}
-                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 my-2 rounded-full inline-flex items-center gap-2">
+                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 rounded-full inline-flex items-center gap-2 my-2">
                                 <div className="w-[15px] h-[15px]">
                                     <RightIcon className="w-full h-full text-sky-800" />
                                 </div>
                                 ship without delay
                             </span>{" "}
                             if so{" "}
-                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800 my-2 rounded-full inline-flex items-center gap-2">
+                            <span className="text-[13px] font-normal px-3 py-1 bg-blue-50 text-sky-800  rounded-full inline-flex items-center gap-2 my-2">
                                 <div className="w-[15px] h-[15px]">
                                     <RightIcon className="w-full h-full text-sky-800" />
                                 </div>
@@ -116,13 +116,13 @@ const AgentSkillModal: React.FC<AgentSkillModalProps> = ({ onClose, }) => {
                         Allow the agent to access email inboxes to read mail from known vendors.
                     </p>
                     <div className=" flex gap-2 lg:gap-0 lg:items-center flex-col lg:flex-row justify-between">
-                        <div className="p-1 border-2 border-gray-300 rounded-lg lg:w-4/5 h-[5.5vh]">
+                        <div className="p-1 border-2 border-gray-300 rounded-lg lg:w-4/5 ">
 
                             {email && (
-                                <div className="flex items-center gap-2 bg-gray-50 rounded-full  w-[30vh] ">
+                                <div className="flex items-center gap-2 bg-gray-50 rounded-full sm:w-[30vh]  ">
                                     {/* Email Text */}
                                     <div className="p-[3px] px-[9px] bg-red-100 text-center border-2 border-gray-300 rounded-full text-[13px] text-gray-500">P</div>
-                                    <span className="text-gray-700 text-[13px] flex items-center">
+                                    <span className="text-gray-700 text-[13px] flex items-center ">
                                         {email}
                                     </span>
 
