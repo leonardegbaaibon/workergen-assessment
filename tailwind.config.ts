@@ -12,7 +12,15 @@ export default {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      boxShadow: {
+        'outset': '0px 0px 8px rgba(0, 0, 0, 0.2)',
+      },
+      invRad: {
+        4.5: '1.125rem',
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    require('@butterfail/tailwindcss-inverted-radius'),
+  ],
 } satisfies Config;
