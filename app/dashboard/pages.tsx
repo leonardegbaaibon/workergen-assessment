@@ -1,7 +1,6 @@
 'use client'
 import Layout from '@/components/Layout';
 import DetailModal from '@/components/ModalDetail';
-import DetailIconModal from '@/components/ModalDetail';
 import AgentSkillModal from '@/components/ModalPopup';
 import UserTable from '@/components/UserTable';
 import { useModal } from '@/context/ModalContext';
@@ -45,7 +44,6 @@ const IconItem: React.FC<IconItemProps> = ({ icon, label }) => (
 // Main Component
 const Dashboard: React.FC = () => {
     const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-    const [display, setDisplay] = useState<boolean>(false);
     const [detail, setDetail] = useState<boolean>(false);
 
     const { isModalOpen, closeModal } = useModal();
@@ -53,10 +51,10 @@ const Dashboard: React.FC = () => {
 
     const toggleDropdown = () => setIsDropdownOpen((prev) => !prev);
 
-    const handleClose = () => {
-        console.log("Modal closed");
-        setDisplay(false); // Hide the modal
-    };
+    // const handleClose = () => {
+    //     console.log("Modal closed");
+    //     setDisplay(false); // Hide the modal
+    // };
     const handleClose2 = () => {
         console.log("Modal closed");
         setDetail(false); // Hide the modal
@@ -65,7 +63,7 @@ const Dashboard: React.FC = () => {
 
     const handleAllowAccess = () => {
         console.log("Access allowed");
-        setDisplay(false); // Hide the modal after allowing access
+        // setDisplay(false); // Hide the modal after allowing access
     };
 
     return (
@@ -114,7 +112,7 @@ const Dashboard: React.FC = () => {
                             <p
                                 key={index}
                                 className="border border-gray-300 rounded-md p-2 text-[12px] text-gray-700 text-center"
-                                onClick={() => setDisplay(true)}
+                                // onClick={() => setDisplay(true)}
                             >
                                 {text}
                             </p>

@@ -5,9 +5,15 @@ import { CrossIcon } from "@/icons/CrossIcon";
 import { MenuIcon } from "@/icons/MenuIcon";
 import { SettingsIcon } from "@/icons/SettingsIcon";
 import { UserMessage } from "@/icons/UserMessage";
-import Image from "next/image";
 
 const Header = () => {
+
+  const icons = [
+    { id: 'bulb', component: <Bulb /> },
+    { id: 'cross', component: <CrossIcon /> },
+    { id: 'settings', component: <SettingsIcon /> },
+    { id: 'user', component: <UserMessage /> }
+  ];
 
   return (
     <div
