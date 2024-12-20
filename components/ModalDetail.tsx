@@ -98,7 +98,7 @@ const DetailModal: React.FC<ModalProps> = ({ onClose }) => {
                     machines’.
                   </li>
                   <li className="text-[12px]">
-                    Multiple people at her company reported 'slowness' during
+                    Multiple people at her company reported slowness during
                     service requests.
                   </li>
                   <li className="text-[12px]">
@@ -166,7 +166,7 @@ const DetailModal: React.FC<ModalProps> = ({ onClose }) => {
                 Jane Reyes is the Chief Operating Officer of Northwind Traders, a
                 dynamic leader with a proven track record in optimizing operations
                 and enhancing customer experiences.Under her guidance, Northwind traders, in-store coffee shops have flourished, becoming
-                a hallmark of quality and innovation. Jane's commitment to excellence makes her an ideal partner for first Coffee. She is always
+                a hallmark of quality and innovation. Janes commitment to excellence makes her an ideal partner for first Coffee. She is always
                 seeking top-tier equipment to elevate her coffee shops offerings ensuring consistent, high-quality service
               </p>
             </div>

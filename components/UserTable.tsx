@@ -11,7 +11,7 @@ interface User {
 }
 
 export default function UserTable(): JSX.Element {
-    const [users, setUsers] = useState<User[]>([
+    const [users] = useState<User[]>([
         { name: "John Doe", topic: "Product Upgrade", statusReason: "In Progress", createdOn: "12/12/2024" },
         { name: "Jane Smith", topic: "Service Contract", statusReason: "Pending", createdOn: "10/10/2024" },
         { name: "Alice Johnson", topic: "New Lead Inquiry", statusReason: "Completed", createdOn: "08/08/2024" },

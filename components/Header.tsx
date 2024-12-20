@@ -43,13 +43,12 @@ const Header = () => {
 
       {/* Right Side */}
       <div className="flex items-center space-x-2 md:space-x-4">
-        {/* Icons */}
-        {[<Bulb />, <CrossIcon />, <SettingsIcon />, <UserMessage />].map((icon, index) => (
+        {icons.map((icon) => (
           <div
-            key={index}
-            className="w-5 h-5 md:w-6 md:h-6  rounded-full flex items-center justify-center"
+            key={icon.id}  // Use a unique 'id' instead of the index
+            className="w-5 h-5 md:w-6 md:h-6 rounded-full flex items-center justify-center"
           >
-            {icon}
+            {icon.component}
           </div>
         ))}
 
